@@ -1,0 +1,17 @@
+{
+  "name": "design-pipeline",
+  "version": "1.0.0",
+  "description": "5개 디자인 스킬(hallmark, frontend-design, ui-ux-pro-max, emil-design-eng, web-design-guidelines)을 함께 설치하고, UI 작업마다 알맞은 스킬을 자동으로 고르게 합니다.",
+  "author": { "name": "kim-do-yeon", "url": "https://github.com/kim-do-yeon" },
+  "homepage": "https://github.com/kim-do-yeon/design-skills",
+  "repository": "https://github.com/kim-do-yeon/design-skills",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "frontend"],
+  "dependencies": [
+    "hallmark",
+    "frontend-design",
+    "ui-ux-pro-max",
+    "emil-design-eng",
+    "web-design-guidelines"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "design-skills",
+  "owner": {
+    "name": "kim-do-yeon",
+    "url": "https://github.com/kim-do-yeon"
+  },
+  "metadata": {
+    "description": "UI 디자인 스킬 5종과, 상황에 맞는 스킬을 자동으로 고르는 design-pipeline 묶음 플러그인",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "design-pipeline",
+      "source": "./plugins/design-pipeline",
+      "description": "5개 디자인 스킬을 한 번에 설치하고, UI 작업마다 알맞은 스킬을 알맞은 순서로 자동 적용합니다.",
+      "category": "design",
+      "keywords": ["design", "ui", "ux", "frontend", "accessibility", "animation"]
+    },
+    {
+      "name": "hallmark",
+      "description": "AI가 만든 티가 나지 않는 페이지 설계·재설계·감사 (Nutlope/hallmark, MIT)",
+      "category": "design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Nutlope/hallmark.git",
+        "path": "skills/hallmark",
+        "sha": "13ac0ec7e148655948100b6396439e481361d690"
+      },
+      "version": "1.1.0",
+      "author": { "name": "Hallmark contributors" },
+      "license": "MIT",
+      "homepage": "https://github.com/Nutlope/hallmark"
+    },
+    {
+      "name": "frontend-design",
+      "description": "개성 있는 시각 방향을 잡는 Anthropic 공식 디자인 스킬 (Apache-2.0)",
+      "category": "design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/frontend-design",
+        "sha": "2a8ad9f74633d10e3d9bb0660a03bfc6e50584b1"
+      },
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "description": "스타일·팔레트·폰트·UX 규칙 데이터베이스와 검색 스크립트 (nextlevelbuilder, MIT)",
+      "category": "design",
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+        "sha": "09170eec67eefd46a7ae85de61b40c194020f997"
+      },
+      "homepage": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+    },
+    {
+      "name": "emil-design-eng",
+      "description": "애니메이션·인터랙션·컴포넌트 완성도 (Emil Kowalski, MIT)",
+      "category": "design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/emilkowalski/skills.git",
+        "path": "skills/emil-design-eng",
+        "sha": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128"
+      },
+      "version": "1.0.0",
+      "author": { "name": "Emil Kowalski" },
+      "license": "MIT",
+      "homepage": "https://github.com/emilkowalski/skills"
+    },
+    {
+      "name": "web-design-guidelines",
+      "description": "Vercel Web Interface Guidelines로 UI 코드 점검 (vercel-labs, MIT)",
+      "category": "design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/vercel-labs/agent-skills.git",
+        "path": "skills/web-design-guidelines",
+        "sha": "063bee94c3f4df8453406c830b0a7df0f2860278"
+      },
+      "version": "1.0.0",
+      "author": { "name": "Vercel" },
+      "license": "MIT",
+      "homepage": "https://github.com/vercel-labs/agent-skills"
+    }
+  ]
+}
